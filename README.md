@@ -7,10 +7,14 @@ This repository contains several regexp examples.
 
 ### 1. Catastrophic Backtracking
 
-This is Java example of backtracking catastrophic shown in Coding Horror post
-This is a known behavior when using nesting repetition operators, that has been analyzed in stackoverlow, regular expressions dedicated sites.
+This is Java example of backtracking catastrophic shown in [Coding Horror post](http://blog.codinghorror.com/regex-performance/)
+This is a known behavior when using **nesting repetition operators**, that has been analyzed in [stackoverlow](http://stackoverflow.com/questions/15082010/stackoverflowerror-when-matching-large-input-using-regex), [regular expressions dedicated sites](http://www.regular-expressions.info/catastrophic.html).
 
-It can be seen the exponential explosion that take to parse using regexp for a simple pattern: (x+x+)y+
+It can be seen the exponential explosion that take to parse using regexp for a simple pattern: 
+
+```
+(x+x+)y+
+```
 
 Details of this issue can be found on the above links.
 
